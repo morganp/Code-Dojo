@@ -1,0 +1,53 @@
+<html>
+<!-- http://docs.jquery.com/ -->
+ <head>
+ <script type="text/javascript" src="../jquery-1.4.2.js"></script>
+ <script type="text/javascript">
+   // we will add our javascript code here
+$(document).ready(function() {
+   $("#list1 a").click(function() {
+     //alert("Hello world!");
+     $("#list1").css("border","3px solid red");
+     return false;
+   });
+
+   $("#list2 li").click(function() {
+     //alert($(this).text());
+     $("#list2").css("border","3px solid green");
+     var text = $(this).text();
+     $("#list1 li").each(function() {
+      $(this).append(' '+text+' ');
+      });
+
+     //Block a links reloading page
+     return false;
+   });
+
+
+   $("#list2 li").find("li").each(function(i) {
+     $(this).append( " BAM! " + i );
+   });
+
+
+ });
+
+ </script>
+ </head>
+ <body>
+   <!-- we will add our HTML content here -->
+ <a href="">Reload Page</a>
+
+<ul id="list1">
+<li>1 <a href="">a</a></li>
+<li>2 <a href="">a</a></li>
+</ul>
+
+<ul id="list2">
+<li>tag </li>
+<li>jQuery</li>
+<li>is</li>
+<li>Awesome</li>
+</ul>
+
+ </body>
+ </html>
