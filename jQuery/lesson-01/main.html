@@ -31,23 +31,25 @@ $(document).ready(function() {
 
    //Tag cloud selection logic
     $("#tag_cloud li").click(function() {
-      
-      var text = $(this).text();
-      
-      $("#list1 li").each(function() {
-         $(this).append(' '+text+' ');
-      });
-      
-      
+      var tag_text = $(this).text();
+      var box_text = $('#tags').val();
+ 
       //Check if already in textarea before appending
-      var areaValue = $('#tags').val();
-      var position = areaValue.indexOf(text)
+      var position = box_text.indexOf(tag_text)
       if (position == -1) {
-         $("#tags").append(text);
+          if (box_text.length > 3) {
+              box_text = box_text+', ';
+          }
+          box_text = box_text+tag_text;
+          $('#tags').val(box_text);
       }
+      
       
       return false;
     });
+ 
+ 
+ 
  
 
 
