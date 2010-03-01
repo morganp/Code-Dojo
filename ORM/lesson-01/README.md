@@ -52,9 +52,10 @@ Since we are often working on a development database we need an easy way of appl
 This is were migrations come in, they have an up and down method. The up is applied when moving to that version, down is called when reverting.
 
 create a migration file called 001_AddDateModifiedSequel.rb and add this to posts:
+
 * modified_date
 
-To apply the migration call $ sequel -m . -M 1 sqlite://lesson1.db
+To apply the migration call $ sequel -m . -M 1 sqlite://lesson1.db  
 To revert/rollback call $ sequel -m . -M 0 sqlite://lesson1.db
 
 This section of the lesson was based on [steamcodes blog][sequel_mig]
