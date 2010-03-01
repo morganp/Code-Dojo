@@ -1,5 +1,6 @@
 ORM Lesson-01
-------------- 
+-------------
+ 
 Object-Relational-Mapping
 
 Create SQLite database with SEQUEL and then ActiveRecord
@@ -20,20 +21,20 @@ To viualise data the [sqlite firefox plugin][ffox_plugin]
 Create an sqlite db called ./lesson1.db
 
 Add a table called posts with fields:
- * id (primary key) -ORM does not really worry about this
- * title
- * body
- * person_id (foreign key)
+* id (primary key) -ORM does not really worry about this
+* title
+* body
+* person_id (foreign key)
 
 Add a table called people:
- * id (primary key)
- * first_name
- * last_name
- * short_name 
+* id (primary key)
+* first_name
+* last_name
+* short_name 
 
 Add a table called tags:
- * id (primary key)
- * tag
+* id (primary key)
+* tag
 
 Now add extra coloumns to :posts and set default values
  The default values will be returned for posts added before this field exists until the post is updated
