@@ -1,15 +1,15 @@
 ORM Lesson-01
 =============
  
-Object-Relational-Mapping
+ORM => Object-Relational-Mapping
 
-Create SQLite database with SEQUEL and then ActiveRecord
-To viualise data the [sqlite firefox plugin][ffox_plugin]
+Create SQLite database with Sequel and then ActiveRecord.  
+To visualise the database [sqlite firefox plugin][ffox_plugin] can be used.
 
-
-[Sequel home] [sequel_main]
-[Sequel cheat sheet][sequel_cheat]
-[ActiveRecord home] [activerecord_main]
+Useful links  
+[Sequel home] [sequel_main],
+[Sequel cheat sheet][sequel_cheat],
+[ActiveRecord home] [activerecord_main].
 
 [ffox_plugin]: https://addons.mozilla.org/en-US/firefox/addon/5817
 [sequel_main]: http://sequel.rubyforge.org/
@@ -39,7 +39,7 @@ Add a table called tags:
 * id (primary key)
 * tag
 
-Now add extra coloumns to :posts and set default values
+Now add extra columns to :posts and set default values
  The default values will be returned for posts added before this field exists until the post is updated
 
 * created_date
