@@ -25,7 +25,7 @@ Add a table called posts with fields:
 * id (primary key) -ORM does not really worry about this
 * title
 * body
-* person_id (foreign key)
+* id (foreign_key for :people)
 
 Add a table called people:
 
@@ -43,6 +43,19 @@ Now add extra columns to :posts and set default values
  The default values will be returned for posts added before this field exists until the post is updated
 
 * created_date
+
+ActiveRecord Hint
+-----------------
+
+Active record can not manipulate the database directly, for one when you create the connection you do not get a DB object to alter the database. Active Record can only create/alter tables when running a migration, before we introduce migrations you can use the following to create tables:
+
+    ActiveRecord::Migration.class_eval do
+      create_table :posts do |t|
+            t.string  :title
+            t.text :body
+       end
+    end
+
 
 Introducing Migrations
 ----------------------
