@@ -11,7 +11,8 @@ Class.new(Sequel::Migration) do
 
    def up
       DB.alter_table :posts do
-         add_column :date_modified, :varchar   
+         add_column :date_modified, :varchar
+         set_column_default :date_modified, "Monday"
       end
    end
 
