@@ -81,7 +81,7 @@ This section of the lesson was based on [steamcodes blog][sequel_mig]
 ActiveRecord Migrations
 -----------------------
 
-There is a little complexity in setting up active record migrations outside of Rails (A web framework), so I have provided a rake file which will run the active record Migration.
+There is a little complexity in setting up active record migrations outside of Rails (A web framework), so I have provided a rake file which will run the active record migration.
 
 The Rake script expects migrations to be in a seperate folder called ./migrate (the standard location is ./db/migrate) and the first should begin with 001_
 
@@ -89,7 +89,7 @@ To apply the migrations call:
     $ rake db:migrate VERSION=1
 
 To roll back:
-    $ rake db:migrate VERSION=1
+    $ rake db:migrate VERSION=0
 
 
 
