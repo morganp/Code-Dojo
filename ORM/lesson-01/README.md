@@ -10,7 +10,7 @@ Useful links
 [Sequel home] [sequel_main],
 [Sequel cheat sheet][sequel_cheat],
 [ActiveRecord home] [activerecord_main],
-[ActiveRecord Cheat Sheet][ar_cheat].
+[ActiveRecord cheat sheet][ar_cheat].
 
 [ffox_plugin]: https://addons.mozilla.org/en-US/firefox/addon/5817
 [sequel_main]: http://sequel.rubyforge.org/
