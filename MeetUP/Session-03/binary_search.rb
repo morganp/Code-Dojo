@@ -18,21 +18,26 @@ def chop(int, arr_of_int)
       return -1 
    end
 
-   half (int, arr_of_int)
+   return half (int, arr_of_int)
 
-  return 0
+  #return 0
 end
 
 def half (int, arr_of_int)
-   middle_num =  arr_of_int.length / 2
-   if int == arr_of_int.at(middle_num).floor
-      puts "Found it"
+   middle_num =  (arr_of_int.length / 2).floor
+   
+	puts " Recurse : Array Split at" + middle_num.to_s
+	puts " int:" + int.to_s + " Array;" + arr_of_int.to_s
+
+	
+	if int == arr_of_int.at(middle_num)
+      puts "  Found it"
       return middle_num
    elsif int > arr_of_int.at(middle_num)
-      puts "In Upper Half"
-      return middle_num + half(int, arr_of_int[middle_num, middle_num])
+      puts " In Upper Half"
+      return middle_num + half(int, arr_of_int[middle_num...(arr_of_int.length)])
    else
-      puts "In Lower Half"
+      puts " In Lower Half"
       half(int, arr_of_int.first(middle_num))
    end
 
