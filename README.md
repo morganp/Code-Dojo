@@ -1,6 +1,6 @@
 Code Dojo
 =========
 
- Practice solving (programming) problems.
+ Practice solving (programming) problems.  
  Build cookbook of examples.
 
