@@ -9,8 +9,8 @@ require 'active_record'
 ##################################
 
 ActiveRecord::Base.establish_connection(
-	:adapter   => 'sqlite3',
-	:database  => './lesson1_AR.db'
+   :adapter   => 'sqlite3',
+   :database  => './lesson1_AR.db'
 )
 
 ## Not sure how to create the foreign keys
@@ -38,7 +38,7 @@ end
 
 #add_column :table, :new_coloumn,  :type
 ActiveRecord::Migration.class_eval do
-	add_column :posts, :date_created, :string
+   add_column :posts, :date_created, :string
 end
 
 
