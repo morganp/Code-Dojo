@@ -1,15 +1,21 @@
 require 'rubygems'
 require 'twitter'
 
+#Load keys
+require 'consumer_keys'
+
+#Best Example
+# http://oauth.rubyforge.org/rdoc/classes/OAuth/Consumer.html
+
 # Consumer Key
-cKey = "load from file"
+#cKey = "function call returns string in consumer_keys.rb"
 #
 # Consumer Secret
-cSecret = "load from file"
+#cSecret = "function call returns string in consumer_keys.rb"
 
 consumer = OAuth::Consumer.new(
-  cKey, 
-  cSecret, 
+  cKey,
+  cSecret,
   {:site => 'http://twitter.com'}
 )
 
@@ -27,7 +33,11 @@ pin = gets.chomp
 
 
 
-access_token = consumer.get_access_token(request_token, pin)
+access_token = request_token.get_access_token
+
+puts "Access Token  : " + access_token.token
+puts "Access Secret : " + access_token.secret
+puts "Access URL    : " + access_token.authorize_url
 
 ## Trying to get access token
 #oauth = Twitter::OAuth.new(cKey, cSecret)
@@ -37,8 +47,6 @@ access_token = consumer.get_access_token(request_token, pin)
 #      request_token
 #   )
 
-puts "Access Token  : " + access_token.token
-puts "Access Secret : " + access_token.secret
-puts "Access URL    : " + access_token.authorize_url
+
 
 
