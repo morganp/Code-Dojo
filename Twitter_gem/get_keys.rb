@@ -1,12 +1,11 @@
-
 require 'rubygems'
 require 'twitter'
 
 # Consumer Key
-cKey = "Jv7O3XZpNoJu72Rql7gE1A"
+cKey = "load from file"
 #
 # Consumer Secret
-cSecret = "t0Ng691zkPlcTXyAVmjRhH7VVJMHWbCyuV4HQT5PH0"
+cSecret = "load from file"
 
 consumer = OAuth::Consumer.new(
   cKey, 
