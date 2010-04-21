@@ -27,13 +27,10 @@ puts "Request URL    : " + request_token.authorize_url
 
 #Pin will be returned
 print "> what was the PIN twitter provided you with? "
-pin = gets.chomp
+pin = (gets.chomp).to_i
+puts  "\"" + pin.to_s + "\""
 
-
-
-
-
-access_token = request_token.get_access_token
+access_token = request_token.get_access_token(:oauth_verifier => pin)
 
 puts "Access Token  : " + access_token.token
 puts "Access Secret : " + access_token.secret
@@ -46,7 +43,6 @@ puts "Access URL    : " + access_token.authorize_url
 #access_token = oauth.get_access_token(
 #      request_token
 #   )
-
 
 
 
