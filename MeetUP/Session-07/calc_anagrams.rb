@@ -34,9 +34,17 @@ class Anagrams
    end
 
    def list_anagrams
-      @list.sort.each do |x|
-         pp x
+      sets = 0
+      total = 0
+      @list.sort.each do |key, value|
+         if value.size > 1
+            sets += 1 
+            total += value.size
+         end
+         pp value
       end
+      puts "Total number of sets = #{sets}"
+      puts "Total number of Anagrams = #{total}"
    end
 
 end
@@ -50,6 +58,20 @@ y.add_to_list("ten")
 y.add_to_list("net")
 y.add_to_list("eat")
 y.add_to_list("tea")
+
+#counter = 1
+begin
+   file = File.new("wordlist.txt", "r")
+   while (line = file.gets)
+      y.add_to_list(line.strip) 
+      #puts "#{counter}: #{line}"
+       #counter = counter + 1
+   end
+   file.close
+rescue => err
+      puts "Exception: #{err}"
+      err
+end
 
 
 y.list_anagrams
