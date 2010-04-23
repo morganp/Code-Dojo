@@ -33,7 +33,7 @@ class Anagrams
       @list[hash] << word
    end
 
-   def list_anagrams
+   def list_anagrams(verbose)
       sets = 0
       total = 0
       @list.sort.each do |key, value|
@@ -41,7 +41,9 @@ class Anagrams
             sets += 1 
             total += value.size
          end
-         pp value
+         if verbose==true
+            pp value
+         end
       end
       puts "Total number of sets = #{sets}"
       puts "Total number of Anagrams = #{total}"
@@ -50,18 +52,18 @@ class Anagrams
 end
 
 y = Anagrams.new
-y.add_to_list("a")
-y.add_to_list("ab")
-y.add_to_list("ba")
+#y.add_to_list("a")
+#y.add_to_list("ab")
+#y.add_to_list("ba")
 
-y.add_to_list("ten")
-y.add_to_list("net")
-y.add_to_list("eat")
-y.add_to_list("tea")
+#y.add_to_list("ten")
+#y.add_to_list("net")
+#y.add_to_list("eat")
+#y.add_to_list("tea")
 
 #counter = 1
 begin
-   file = File.new("wordlist.txt", "r")
+   file = File.new("dictionary.txt", "r")
    while (line = file.gets)
       y.add_to_list(line.strip) 
       #puts "#{counter}: #{line}"
@@ -74,7 +76,7 @@ rescue => err
 end
 
 
-y.list_anagrams
+y.list_anagrams(false)
 
 
 
