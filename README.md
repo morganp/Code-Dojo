@@ -7,6 +7,13 @@ Code Dojo
 
 Ruby Conf Videos
 ----------------
+Scottish Ruby Confrerence [2008][scotrub2008] [2009][scotrub2009] [2010][scotrub2010]  
+Ruby Con [2007][rub2007] [2008][rub2008] [2009][rub2009] [2010][rub2010]
+MountainWest [2008][Mwest2008] [2009][Mwest2009] [2010][Mwest2010]
+
+[Mwest2010]: http://mwrc2010.confreaks.com/
+[Mwest2009]: http://mwrc2009.confreaks.com/
+[Mwest2008]: http://mwrc2008.confreaks.com/
 
 [scotrub2010]: http://video2010.scottishrubyconference.com/
 [scotrub2009]: http://www.engineyard.com/blog/community/scotland-on-rails/
