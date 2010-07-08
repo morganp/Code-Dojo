@@ -1,8 +1,9 @@
 Ruby Conf Videos
 ----------------
-Scottish Ruby Confrerence [2008][scotrub2008] [2009][scotrub2009] [2010][scotrub2010]
-Ruby Con [2007][rub2007] [2008][rub2008] [2009][rub2009] [2010][rub2010]
-MountainWest [2008][Mwest2008] [2009][Mwest2009] [2010][Mwest2010]
+
+Scottish Ruby Confrerence [2008][scotrub2008] [2009][scotrub2009] [2010][scotrub2010]  
+Ruby Con [2007][rub2007] [2008][rub2008] [2009][rub2009] [2010][rub2010]  
+MountainWest [2008][Mwest2008] [2009][Mwest2009] [2010][Mwest2010]  
 
 [Mwest2010]: http://mwrc2010.confreaks.com/
 [Mwest2009]: http://mwrc2009.confreaks.com/
@@ -22,6 +23,9 @@ MountainWest [2008][Mwest2008] [2009][Mwest2009] [2010][Mwest2010]
 [vital_ruby_zip]: http://onestepback.org/download/vital_ruby_lab06.zip
 [vital_ruby_tgz]: http://onestepback.org/download/vital_ruby_lab06.tgz
 [onestep]: http://onestepback.org/download/
+
+Plans for a tutorial
+====================
 
 first
 -----
