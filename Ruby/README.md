@@ -1,3 +1,11 @@
+Ruby Katas etc
+==============
+Quick presintation [Striaght Up RSpec][rspec]  
+[EdgeCase Ruby Koans][edgeKoans]  
+
+[rspec]: http://www.slideshare.net/gsterndale/straight-up-rspec
+[edgeKoans]: http://github.com/edgecase/ruby_koans
+
 Ruby Conf Videos
 ----------------
 

@@ -4,6 +4,11 @@ Code Dojo
  Practice solving (programming) problems.
  Build cookbook of examples.
 
+ [The Original Code Kata Site][dtkata]  
+ [EdgeCase Ruby Koans][edgeKoans]
+
+[dtkata]: http://codekata.pragprog.com/
+[edgeKoans]: http://github.com/edgecase/ruby_koans
 
 Ruby Conf Videos
 ----------------
