@@ -5,10 +5,13 @@ Code Dojo
  Build cookbook of examples.
 
  [The Original Code Kata Site][dtkata]  
- [EdgeCase Ruby Koans][edgeKoans]
+ [EdgeCase Ruby Koans][edgeKoans]  
+ [Project Euler][euler] Mathemtical and Programming problems  
+
 
 [dtkata]: http://codekata.pragprog.com/
 [edgeKoans]: http://github.com/edgecase/ruby_koans
+[euler]: http://projecteuler.net/
 
 Ruby Conf Videos
 ----------------
