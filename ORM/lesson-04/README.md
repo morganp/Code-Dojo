@@ -9,6 +9,17 @@ To create the database used in the last example just run:
 
 Migrations should always be used when modifing tables but are not normally used when adding or removing data. In this lesson we will just be interigating the database.
 
+ActiveRecord Hint
+=================
+
+For the active record exercise it might be useful to look up these commands (below) when setting up the Model.
+
+:belongs_to
+:has_many
+
+Exercise
+========
+
 In Sequel and then Active Record Print out the first post, as before. Then print out the first person.
 
     Post Man Pat

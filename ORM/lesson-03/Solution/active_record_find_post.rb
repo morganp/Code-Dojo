@@ -33,8 +33,7 @@ printpost( @post )
 puts
 puts
 puts "Now Find All posts"
-@posts = Post.all
-#Post.find(:all)
+@posts = Post.all #=> Post.find(:all)
 
 @posts.each do |post|
    printpost( post )
