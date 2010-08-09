@@ -27,9 +27,9 @@ Add a table called posts with fields:
 * id (primary key) -ORM does not really worry about this
 * title
 * body
-* id (foreign_key for :people)
+* person_id (foreign_key for :people)
 
-Add a table called people:
+Add a table called people (foreign key mappings will be to person_id, ORM models will be called Person):
 
 * id (primary key)
 * first_name
