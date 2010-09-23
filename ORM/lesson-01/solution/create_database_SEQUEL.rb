@@ -7,12 +7,12 @@ require 'sequel'
 ##################################
 ## Connect to the database
 ##################################
-DB = Sequel.sqlite('./lesson2.db')
+DB = Sequel.sqlite('./lesson1.db')
 
 unless DB.table_exists? :posts
   DB.create_table :posts do
     primary_key :id
-    foreign_key :id, :people
+    foreign_key :person_id, :people
     varchar :title
     text :body
   end

@@ -11,13 +11,13 @@ DB = Sequel.sqlite('./lesson2.db')
 
   DB.create_table? :posts do
     primary_key :id
-    foreign_key :people_id, :people
+    foreign_key :person_id, :persons
     varchar :title
     text :body
     DateTime :date_created
   end
 
-   DB.create_table? :people do
+   DB.create_table? :persons do
       primary_key :id
       varchar :first_name
       varchar :last_name

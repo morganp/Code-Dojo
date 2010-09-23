@@ -3,25 +3,24 @@
 require 'rubygems'
 require 'sequel'
 
+##################################
+## Connect to the database
+##################################
 DB = Sequel.sqlite('./lesson3.db')
 
-unless DB.table_exists? :posts
-  DB.create_table :posts do
-    primary_key :id
-    foreign_key :people_id, :people
-    varchar :title
-    text :body
-  end
-end
+   DB.create_table :posts do
+      primary_key :id
+      foreign_key :people_id, :peoples
+      varchar :title
+      text :body
+   end
 
-unless DB.table_exists? :peoples
    DB.create_table :peoples do
       primary_key :id
       varchar :first_name
       varchar :last_name
       varchar :short_name
    end
-end
 
 
    DB[:peoples].insert(
