@@ -3,7 +3,7 @@ Kata: Blocks and Iterators
 
 For this Kata I would you will start with a basic class and add block based iterating functions which handle the block in various ways. Most of the information on how to complete the tasks is contained in [ProgrammingRuby][].
 
-Expand the class given below by completing these tasks:
+Expand the class given below by completing these tasks:  
 1) Mixin Enumerable to add the .map function, for @arr.
 
 2) Create a map_row( row_id ) method for @arr_of_arr
